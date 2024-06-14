@@ -24,10 +24,12 @@ export const fn = (a, b, c) => {
       preciosEmpanadas.push(16);
    }
 
+   const mediaEmpanadas = [];
    while (preciosEmpanadas.length > 1) {
       let primerPrecio = preciosEmpanadas.shift(); 
       let ultimoPrecio = preciosEmpanadas.pop(); 
       let mediaPrecio = (primerPrecio + ultimoPrecio) / 2; 
+      mediaEmpanadas.push(mediaPrecio);
     }
 
    
