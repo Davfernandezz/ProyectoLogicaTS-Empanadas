@@ -47,9 +47,6 @@ export const fn = (a, b, c) => {
       }
     }
 
-    for (let i = 0; i < mediaEmpanadas.length; i++) {
-      return precioTotal;
-      }
-
     console.log(precioTotal);
+    return precioTotal;
 };
