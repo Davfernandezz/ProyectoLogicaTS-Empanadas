@@ -24,5 +24,11 @@ export const fn = (a, b, c) => {
       preciosEmpanadas.push(16);
    }
 
-   console.log(preciosEmpanadas);
+   while (preciosEmpanadas.length > 1) {
+      let primerPrecio = preciosEmpanadas.shift(); 
+      let ultimoPrecio = preciosEmpanadas.pop(); 
+      let mediaPrecio = (primerPrecio + ultimoPrecio) / 2; 
+    }
+
+   
 };
