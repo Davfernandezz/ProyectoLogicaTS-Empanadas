@@ -13,4 +13,16 @@ export const fn = (a, b, c) => {
       throw Error("El numero de empanadas tiene que ser un numero entero.")
    }
 
+   let preciosEmpanadas = [];
+   for (let i = 0; i < a; i++) {
+      preciosEmpanadas(12);
+   }
+   for (let i = 0; i < b; i++) {
+      preciosEmpanadas(14);
+   }
+   for (let i = 0; i < c; i++) {
+      preciosEmpanadas(16);
+   }
+
+   console.log(preciosEmpanadas);
 };
