@@ -30,7 +30,10 @@ export const fn = (a, b, c) => {
       let ultimoPrecio = preciosEmpanadas.pop(); 
       let mediaPrecio = (primerPrecio + ultimoPrecio) / 2; 
       mediaEmpanadas.push(mediaPrecio);
+      
     }
 
-   
+    if (preciosEmpanadas.length === 1) {
+      mediaEmpanadas.push(preciosEmpanadas.pop()); 
+    }
 };
