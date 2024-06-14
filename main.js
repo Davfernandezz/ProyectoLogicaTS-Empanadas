@@ -13,6 +13,9 @@ export const fn = (a, b, c) => {
       throw new Error("El numero de empanadas tiene que ser un numero entero.")
    }
 
+
+   let precioTotal = 0;
+
    let preciosEmpanadas = [];
    for (let i = 0; i < a; i++) {
       preciosEmpanadas.push(12);
@@ -30,10 +33,23 @@ export const fn = (a, b, c) => {
       let ultimoPrecio = preciosEmpanadas.pop(); 
       let mediaPrecio = (primerPrecio + ultimoPrecio) / 2; 
       mediaEmpanadas.push(mediaPrecio);
-      
+
     }
 
     if (preciosEmpanadas.length === 1) {
       mediaEmpanadas.push(preciosEmpanadas.pop()); 
     }
+
+
+    for (let i = 0; i < mediaEmpanadas.length; i++) {
+      if (i % 3 === 0) {
+         precioTotal += mediaEmpanadas[i];
+      }
+    }
+
+    for (let i = 0; i < mediaEmpanadas.length; i++) {
+      return precioTotal;
+      }
+
+    console.log(precioTotal);
 };
