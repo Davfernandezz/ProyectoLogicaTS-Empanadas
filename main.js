@@ -1,22 +1,23 @@
 export const fn = (a, b, c) => {
-   // Cuerpo de la función: Completa la lógica de la función aquí.
-   
-   if(a + b + c > 40) {
+
+   // condiciones de los parametros de entrada
+   if (a + b + c > 40) {
       throw new Error("El número de empanadas no puede pasar de 40.")
    }
 
-   if((a + b + c) % 3 !== 0) {
+   if ((a + b + c) % 3 !== 0) {
       throw new Error("El número de empanadas tiene que ser divisible entre 3.")
    }
 
-   if(a < 0 || b < 0 || c < 0) {
+   if (a < 0 || b < 0 || c < 0) {
       throw new Error("El numero de empanadas tiene que ser un numero entero.")
    }
 
 
    let precioTotal = 0;
 
-   let preciosEmpanadas = [];
+   // array de los precios
+   const preciosEmpanadas = [];
    for (let i = 0; i < a; i++) {
       preciosEmpanadas.push(12);
    }
@@ -27,26 +28,26 @@ export const fn = (a, b, c) => {
       preciosEmpanadas.push(16);
    }
 
+   // array de la media de los precios
    const mediaEmpanadas = [];
    while (preciosEmpanadas.length > 1) {
-      let primerPrecio = preciosEmpanadas.shift(); 
-      let ultimoPrecio = preciosEmpanadas.pop(); 
-      let mediaPrecio = (primerPrecio + ultimoPrecio) / 2; 
+      let primerPrecio = preciosEmpanadas.shift();
+      let ultimoPrecio = preciosEmpanadas.pop();
+      let mediaPrecio = (primerPrecio + ultimoPrecio) / 2;
       mediaEmpanadas.push(mediaPrecio);
-
-    }
-
-    if (preciosEmpanadas.length === 1) {
-      mediaEmpanadas.push(preciosEmpanadas.pop()); 
-    }
+   }
+   if (preciosEmpanadas.length === 1) {
+      mediaEmpanadas.push(preciosEmpanadas.pop());
+   }
 
 
-    for (let i = 0; i < mediaEmpanadas.length; i++) {
+   // precio total calculo
+   for (let i = 0; i < mediaEmpanadas.length; i++) {
       if (i % 3 === 0) {
          precioTotal += mediaEmpanadas[i];
       }
-    }
+   }
 
-    console.log(precioTotal);
-    return precioTotal;
+   console.log(precioTotal);
+   return precioTotal;
 };
