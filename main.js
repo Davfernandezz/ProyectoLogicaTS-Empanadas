@@ -13,7 +13,6 @@ export const fn = (a, b, c) => {
       throw new Error("El numero de empanadas tiene que ser un numero entero.")
    }
 
-
    let precioTotal = 0;
 
    // array de los precios
@@ -37,10 +36,13 @@ export const fn = (a, b, c) => {
       mediaEmpanadas.push(mediaPrecio);
       mediaEmpanadas.push(mediaPrecio);
    }
+
+   // añadir la empanada al array en caso de que falte 
    if (preciosEmpanadas.length === 1) {
       mediaEmpanadas.push(preciosEmpanadas.pop());
    }
 
+   // ordenar los precios de mayor a menor
    mediaEmpanadas.sort((a, b) => b - a);
    console.log(mediaEmpanadas)
 
