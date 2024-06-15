@@ -40,6 +40,9 @@ export const fn = (a, b, c) => {
       mediaEmpanadas.push(preciosEmpanadas.pop());
    }
 
+   mediaEmpanadas.sort();
+   mediaEmpanadas.reverse();
+   console.log(mediaEmpanadas)
 
    // precio total calculo
    for (let i = 0; i < mediaEmpanadas.length; i++) {
