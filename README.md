@@ -1,4 +1,14 @@
-# Compra de empanadas
+# Compra de empanadas🥟
+
+## Table of Contents
+
+- [Enunciado](#enunciado-del-problema)
+- [Description](#description)
+- [Entrada](#entrada)
+- [Salida](#salida)
+- [Webgrafia](#webgrafia)
+- [Stack](#stack)
+- [Author](#author)
 
 ## Enunciado del problema
 
@@ -28,59 +38,24 @@ La función debe tener tres parámetros de entrada. Cada conjunto de entrada con
 
 Por cada conjunto de entrada, retornar un único entero: la mínima cantidad de euros que se puede pagar para llevarse todas las empanadas.
 
-## Ejemplos de casos de uso
-
-| Entrada     | Salida      |
-| ----------- | ----------- |
-| 1, 1, 1     | 14          |
-| 3, 3, 0     | 26          |
-| 2, 0, 1     | 14          |
-| 9, 10, 11   | 142         |
-
 
 ## Instrucciones de uso
 
-1. Clonar el repositorio
-3. Instalar las dependencias:
-
-    ```bash
-    npm install
-    ```
-
-4. Completar los argumentos y el cuerpo de la función `fn` en el archivo (`main.js`). No se debe renombrar la función `fn`.
-
-    ```javascript
-    // main.js
-    export const fn = (/* argumentos de la función */) => {
-    // Cuerpo de la función: Completa la lógica de la función aquí.
-    };
-    ```
-
-4. Ejecutar los test:
+1. Ejecutar los test:
     ```bash
     npm run test
     ```
 
-## Evaluación
+## Webgrafia
 
-### Mínimo
-Para el APTO se deben pasar todos los test excepto los de validaciones de errores en la entrada de datos
 
-### Extra
-Pasar los test de validación de errores en la entrada de datos (Throws error)
 
-### Ejemplo de ejecución de algunos test
+## Stack
 
-```bash
-✓ main.test.js (7)
-   ✓ Function fn - Input Parameter Test Cases (7)
-     ✓ Case: fn(1, 1, 1) - Expected Result: 14
-     ✓ Case: fn(3, 3, 0) - Expected Result: 26
-     ✓ Case: fn(2, 0, 1) - Expected Result: 14
-     ✓ Case: fn(9, 10, 11) - Expected Result: 142
-     ✓ Throw error on negative input value: fn(-1, 3, 1)
-     ✓ Throws error when the total sum of inputs (2+2+1) is not a multiple of 3: fn(2, 2, 1)
-     ✓ Throws error when the total sum of inputs (15+15+20) is not less than 40: fn(15, 15, 20)
-```
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![Node](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) 
 
- 
+
+## Author
+
+- **David Fernandez Valle**
+  - [GitHub](https://github.com/Davfernandezz)
