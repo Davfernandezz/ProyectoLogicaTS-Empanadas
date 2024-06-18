@@ -46,11 +46,11 @@ Añadiremos tres condiciones para confirmar que los numeros de entrada van ser n
 2.Creación del array "preciosEmpanadas":
 
 Crearemos el array "preciosEmpanadas" y le añadiremos tres bucles for en el que ascociaremos los tres tipos de precios posibles.
-En el primer bucle agregaremos 12 al array "preciosEmpanadas" a veces, en el segundo bucle agregaremos 14 al array "preciosEmpanadas" b veces y en el tercer bucle agregaremos 16 al array "preciosEmpanadas" c veces.
+En el primer bucle agregaremos 12 al array "a" veces, en el segundo bucle agregaremos 14 al array "b" veces y en el tercer bucle agregaremos 16 al array "c" veces.
 
-3.Creación del array "mediaEmpanadas"
+3.Creación del array "mediaEmpanadas":
 
-Crearemos el array "mediaEmpanadas" para hacer la media de los precios, se usa un bucle while hasta que queden menos de dos elementos en el array. Se puede obtener el primer elemento con el "shift" y el último con el "pop". El nuevo precio se calculara con la media de los 2 elementos y se agregara al array 2 veces. Si queda un elemento sin combinar, se agrega directamente al array .
+Crearemos el array "mediaEmpanadas" para hacer la media de los precios, utilizaremos un bucle while hasta que queden menos de dos elementos en el array, obtendremos el primer elemento con "shift" y el último con "pop". El nuevo precio se calculara con la media de los 2 elementos y se agregara al array 2 veces. Si queda un elemento sin combinar, se agrega directamente al array .
 
 4.Ordenar la media de los precios:
 
