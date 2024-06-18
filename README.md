@@ -43,19 +43,16 @@ Por cada conjunto de entrada, retornar un único entero: la mínima cantidad de 
 
 Añadiremos tres condiciones para confirmar que los numeros de entrada van ser numeros enteros, si el total de los numeros es multiplo de tres 3 y si es igual o mayor a 40. En caso de que no se cumplan estos requisitos nos lanzara un error.
 
-2.Creación del array de precios:
+2.Creación del array "preciosEmpanadas":
 
 Crearemos el array "preciosEmpanadas" y le añadiremos tres bucles for en el que ascociaremos los tres tipos de precios posibles.
+En el primer bucle agregaremos 12 al array "preciosEmpanadas" a veces, en el segundo bucle agregaremos 14 al array "preciosEmpanadas" b veces y en el tercer bucle agregaremos 16 al array "preciosEmpanadas" c veces.
 
--En el primer bucle agregaremos 12 al array "preciosEmpanadas" a veces.
--En el segundo bucle agregaremos 14 al array "preciosEmpanadas" b veces.
--En el tercer bucle agregaremos 16 al array "preciosEmpanadas" c veces.
-
-3.Combinación de precios:
+3.Creación del array "mediaEmpanadas"
 
 Crearemos el array "mediaEmpanadas" para hacer la media de los precios, se usa un bucle while hasta que queden menos de dos elementos en el array. Se puede obtener el primer elemento con el "shift" y el último con el "pop". El nuevo precio se calculara con la media de los 2 elementos y se agregara al array 2 veces. Si queda un elemento sin combinar, se agrega directamente al array .
 
-4.Ordenar precios combinados:
+4.Ordenar la media de los precios:
 
 Usaremos "sort" para ordenar el array "mediaEmpanadas" de de mayor a menor.
 
