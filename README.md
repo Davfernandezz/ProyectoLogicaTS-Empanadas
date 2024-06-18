@@ -1,16 +1,15 @@
 # Compra de empanadas🥟
 
-## Table of Contents
+## Tabla de contenido
 
 - [Enunciado](#enunciado-del-problema)
-- [Description](#description)
 - [Entrada](#entrada)
 - [Salida](#salida)
-- [Webgrafia](#webgrafia)
+- [Explicacion](#explicacion-del-proceso)
 - [Stack](#stack)
-- [Author](#author)
+- [Autor](#autor)
 
-## Enunciado del problema
+## Enunciado del problema🧾
 
 El profesor Maple se embarca en la tarea de adquirir empanadas para todos los participantes del bootcamp de programación. Dado que hoy es el Día de las Empanadas,  hay una oferta especial en la que te llevas hasta tres empanadas y solo pagas la más cara. Con un presupuesto ajustado para el curso, los profesores debaten para intentar minimizar el gasto total por todas las empanadas.
 
@@ -38,6 +37,32 @@ La función debe tener tres parámetros de entrada. Cada conjunto de entrada con
 
 Por cada conjunto de entrada, retornar un único entero: la mínima cantidad de euros que se puede pagar para llevarse todas las empanadas.
 
+## Explicacion del proceso
+
+1.Condiciones de los parametros de entrada:
+
+Añadiremos tres condiciones para confirmar que los numeros de entrada van ser numeros enteros, si el total de los numeros es multiplo de tres 3 y si es igual o mayor a 40. En caso de que no se cumplan estos requisitos nos lanzara un error.
+
+2.Creación del array de precios:
+
+Crearemos el array "preciosEmpanadas" y le añadiremos tres bucles for en el que ascociaremos los tres tipos de precios posibles.
+
+-En el primer bucle agregaremos 12 al array "preciosEmpanadas" a veces.
+-En el segundo bucle agregaremos 14 al array "preciosEmpanadas" b veces.
+-En el tercer bucle agregaremos 16 al array "preciosEmpanadas" c veces.
+
+3.Combinación de precios:
+
+Crearemos el array "mediaEmpanadas" para hacer la media de los precios, se usa un bucle while hasta que queden menos de dos elementos en el array. Se puede obtener el primer elemento con el "shift" y el último con el "pop". El nuevo precio se calculara con la media de los 2 elementos y se agregara al array 2 veces. Si queda un elemento sin combinar, se agrega directamente al array .
+
+4.Ordenar precios combinados:
+
+Usaremos "sort" para ordenar el array "mediaEmpanadas" de de mayor a menor.
+
+
+5.Calcular el precio total:
+
+Para calcular el precio total utilizaremos un bucle for para recorrer el array "mediaEmpanadas" y cada tercer elemento se agregara a "precioTotal".
 
 ## Instrucciones de uso
 
@@ -46,16 +71,13 @@ Por cada conjunto de entrada, retornar un único entero: la mínima cantidad de 
     npm run test
     ```
 
-## Webgrafia
-
-
 
 ## Stack
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![Node](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) 
 
 
-## Author
+## Autor
 
 - **David Fernandez Valle**
   - [GitHub](https://github.com/Davfernandezz)
